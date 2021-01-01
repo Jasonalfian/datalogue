@@ -1,0 +1,70 @@
+.global6 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.content6 {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 55vw;
+  height: 100vh;
+}
+.NamaSubCategory {
+  font-size: 100%;
+  font-weight: 500;
+  margin-top: 2%;
+}
+.Dropdown-containerCategory {
+  position: relative;
+  display: inline-block;
+  margin-top: 10px;
+}
+.segitigabawah {
+  margin-right: 3%;
+  display: flex;
+  justify-self: flex-end;
+}
+.button-categoryData {
+  padding: 0;
+  border: 0;
+  cursor: pointer;
+  outline: 0;
+  font-size: 20px;
+  width: 600px;
+  height: 45px;
+  display: flex;
+  align-items: center;
+}
+.selectionop {
+  margin-left: 5%;
+  width: 100%;
+  display: flex;
+}
+.List-ContainerCategory {
+  background-color: #efefef;
+  z-index: 2;
+  position: absolute;
+}
+.tambahsub {
+  background-color: #3b5998;
+  color: white;
+  width: 35%;
+  height: 7%;
+  margin-top: 6%;
+  border-radius: 4px;
+}
+.lihatlistsub {
+  margin-top: 4%;
+  font-size: 100%;
+  font-weight: 500;
+}
+.ListItem2 {
+  list-style: none;
+  margin: auto;
+  top: 100%;
+  left: 0;
+  width: 600px;
+  z-index: 1;
+  border: 2px solid rgba(0, 0, 0, 0.04);
+}

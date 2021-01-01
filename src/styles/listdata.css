@@ -1,0 +1,30 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap");
+.backbuttons {
+  margin-right: 44%;
+  margin-top: 1.5%;
+  font-size: 100%;
+  font-weight: 500;
+}
+.toptext4 {
+  margin-top: 3.5%;
+  margin-right: 30%;
+  font-size: 200%;
+  font-weight: 700;
+  margin-bottom: 5px;
+}
+.content7 {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 55vw;
+  height: 75vh;
+}
+.global4 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.flex-large {
+  position: absolute;
+}

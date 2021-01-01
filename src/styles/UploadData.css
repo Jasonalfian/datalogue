@@ -1,0 +1,118 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap");
+.global3 {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+}
+.content3 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  font-family: "Nunito Sans", sans-serif;
+}
+.toptext3 {
+  margin-top: 20px;
+  font-size: 200%;
+  font-weight: 800;
+  margin-bottom: 15px;
+  margin-right: 28%;
+}
+.Datasets-form {
+  width: 650px;
+  height: 80vw;
+  margin-right: 2%;
+}
+.Datasets-text {
+  font-size: 15px;
+  font-weight: 500;
+}
+.input-form {
+  margin-bottom: 20px;
+  margin-top: -7px;
+  height: 42px;
+  width: 650px;
+  padding: 6px 5px;
+  display: inline-block;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  font-size: 16px;
+}
+.Dropdown-container {
+  position: relative;
+  display: inline-block;
+  margin-top: 10px;
+}
+.button-category {
+  padding: 0;
+  border: 0;
+  cursor: pointer;
+  outline: 0;
+  font-size: 20px;
+  width: 650px;
+  height: 45px;
+}
+.button-subcategory {
+  width: 650px;
+  height: 45px;
+}
+.dropdown-category {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 650px;
+  z-index: 2;
+  border: 1px solid rgba(0, 0, 0, 0.04);
+  box-shadow: 0 16px 24px 2px rgba(0, 0, 0, 0.14);
+}
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+li {
+  padding: 8px 12px;
+}
+li:hover {
+  background-color: rgba(0, 0, 0, 0.14);
+  cursor: pointer;
+}
+.subcateg {
+  margin-top: 10px;
+}
+.upload-data {
+  background-color: #3b5998;
+  color: white;
+  width: 35%;
+  height: 7%;
+  margin-top: 6%;
+  border-radius: 4px;
+}
+
+.button-category {
+  display: flex;
+  align-items: flex-start;
+  align-items: center;
+  padding-left: 2%;
+}
+.List-Container {
+  background-color: #efefef;
+  z-index: 2;
+  position: absolute;
+}
+.ListItem {
+  list-style: none;
+  margin: auto;
+  top: 100%;
+  left: 0;
+  width: 650px;
+  z-index: 1;
+  border: 2px solid rgba(0, 0, 0, 0.04);
+}
+.subcateg {
+  padding-top: 10px;
+}
