@@ -4,36 +4,44 @@ import { Link, graphql } from "gatsby"
 import Layout from "../components/layout"
 import NavbarDark from "../components/Globals/NavbarDark"
 import OneDataset from '../components/Datasets/oneDataset'
-import OneDatasetEmpty from '../components/Datasets/oneDatasetEmpty'
+import OneDatasetEmpty from '../components/Datasets/OneDatasetEmpty'
 import LembagaHead from '../components/Datasets/lembagaHead'
 
 const DatasetPage = ({ data }) => {
 
-const category = data.strapiCategories
-const dataset = data.datasets.nodes
+    const category = data.strapiCategories
+    const dataset = data.datasets.nodes
 
-console.log(dataset.length)
+    console.log(dataset.length)
 
-if(dataset.length===0){
-  return(
-  <Layout>
-    <NavbarDark/>
-    <LembagaHead category={category}/>
-    <OneDatasetEmpty/>
-  </Layout>
-  )
-} else{
-  return(
-  <Layout>
-    <NavbarDark/>
-    <LembagaHead category={category}/>
-    <OneDataset dataset={dataset}/>
-  </Layout>
-  )
-  }
+    if (dataset.length === 0) {
+        return ( <
+            Layout >
+            <
+            NavbarDark / >
+            <
+            LembagaHead category = { category }
+            /> <
+            OneDatasetEmpty / >
+            <
+            /Layout>
+        )
+    } else {
+        return ( <
+            Layout >
+            <
+            NavbarDark / >
+            <
+            LembagaHead category = { category }
+            /> <
+            OneDataset dataset = { dataset }
+            /> <
+            /Layout>
+        )
+    }
 }
 
-export const query = graphql`
+export const query = graphql `
   query 
   getAllDatasets ($name: String) {
     datasets: 
@@ -74,7 +82,7 @@ export const query = graphql`
 //   query 
 //   getAllDatasets ($name: String) {
 //     datasets: 
-    
+
 //     strapiCategories(Name: {eq: $name}) {
 //       Name
 //       logowhite {
@@ -88,38 +96,38 @@ export const query = graphql`
 //   }
 //   `
 
-  // query 
-  // getAllDatasets($name: String) {
-  //   datasets: 
-  //   allStrapiSubCategories(filter: {category: {Name: {eq: $name}}}) {
-  //     nodes {
-  //       id
-  //       Name
-  //       dataests {
-  //         Name
-  //         Link
-  //         id
-  //         created_at
-  //         Author
-  //       }
-  //       category {
-  //         Name
-  //         logodark {
-  //           childImageSharp {
-  //             fluid {
-  //               base64
-  //               tracedSVG
-  //               srcWebp
-  //               srcSetWebp
-  //               originalImg
-  //               originalName
-  //             }
-  //           }
-  //         }
-  //       }
-  //     }
-  //   }
-  // }
-  // `
+// query 
+// getAllDatasets($name: String) {
+//   datasets: 
+//   allStrapiSubCategories(filter: {category: {Name: {eq: $name}}}) {
+//     nodes {
+//       id
+//       Name
+//       dataests {
+//         Name
+//         Link
+//         id
+//         created_at
+//         Author
+//       }
+//       category {
+//         Name
+//         logodark {
+//           childImageSharp {
+//             fluid {
+//               base64
+//               tracedSVG
+//               srcWebp
+//               srcSetWebp
+//               originalImg
+//               originalName
+//             }
+//           }
+//         }
+//       }
+//     }
+//   }
+// }
+// `
 
 export default DatasetPage
