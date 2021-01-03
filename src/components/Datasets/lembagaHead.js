@@ -2,15 +2,25 @@ import React from "react"
 import LembagaPic from "../../images/icon organisasi putih 1.png"
 import styled from "styled-components"
 import Img from "gatsby-image"
+import {Link} from "gatsby"
 
 const LembagaHead = ({category}) => {
 
   console.log(category.shortDescription)
+  const back ="< Back"
 
   return (
+    <div className="bg-black">
+    <container>
+      <div className ="ml-2 ml-sm-5 py-3">
+          <Link to={"/Datasets"}>
+            <p className="mb-n3" style={{textDecoration: 'none',color: 'white'}}>{back}</p>
+          </Link>
+          </div>
+      
     <div className="infographicSearch d-flex align-items-center justify-content-center">
-
-      <container className="justify-content-center mt-n5">
+      
+      <container className="mt-n5">
         <div className="row mb-n4">
           <div className="col-12">
             <center>
@@ -27,33 +37,15 @@ const LembagaHead = ({category}) => {
           </div>
         </div>
         <div className="row">
-          <div className="col-12">
+          <div className="col-12 mx-2">
             <center>
               <p className="text-white">{category.shortDescription}</p>
             </center>
           </div>
         </div>
       </container>
-
-      {/* <div className="px-5"> */}
-        {/* <div className="row ml-lg-5 mr-lg-5 justify-content-center d-flex align-items-center"> */}
-         
-          {/* <div class="col-4 col-sm-3 col-md-3 col-lg-3 col-xl-3"> */}
-            {/* <img src={LembagaPic} /> */}
-          {/* </div> */}
-            
-            {/* <div class="col-6 col-sm-6 col-md-6 col-lg-6 col-xl-6 left-align"> */}
-            {/* Placeholder untuk nama dari lembaga */}
-            {/* <h1 style={{fontSize:"250%"}} className="font-weight-bold mb-4 color-tosca">
-              Manajemen dan Pengembangan Organisasi
-            </h1> */}
-
-            {/* <HeroH1 className="font-weight-bold mb-4 color-tosca">Kaderisasi</HeroH1> */}
-
-          {/* </div> */}
-        {/* </div> */}
-      {/* </div> */}
-
+    </div>
+    </container>
     </div>
   )
 }

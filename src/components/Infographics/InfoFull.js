@@ -5,7 +5,7 @@ export default function InfoFull(infographics) {
 
   console.log(infographics.infographics)
     return( 
-    <section className="py-5">
+    <section className="pt-3">
       <div className="container">
         
           <div className="row justify-content-center py-3">

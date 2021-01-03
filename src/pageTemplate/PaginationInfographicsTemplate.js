@@ -7,8 +7,9 @@ import SEO from "../components/seo"
 
 import InfoFull from "../components/Infographics/InfoFull"
 import SearchSection from "../components/Infographics/SearchSection"
+import Pager from "../components/Globals/Pager"
 
-export default ({data}) => {
+export default ({data, pageContext}) => {
 
 const {
   allStrapiInfographics: {nodes: Infographics},
@@ -21,17 +22,19 @@ return (
     <SEO title="Home" />
     <SearchSection />
     <InfoFull infographics={Infographics} />
+    <Pager pageContext={pageContext}/>
   </Layout>
 )
 }
 
 export const query = graphql`
-{
+query ($skip: Int!, $limit: Int!) {
   allStrapiInfographics (
     sort:{
       fields: [id]
       order: DESC
-    }
+    }skip: $skip
+    limit: $limit
   ){
     nodes {
       id

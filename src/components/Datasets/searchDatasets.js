@@ -11,11 +11,12 @@ export default function SearchDatasets() {
             {/* <h3 className="font-weight-bold text-white mb-4 display-4">
                 What are you looking for?
             </h3> */}
-
+          <center>
             <HeroH1 className="font-weight-bold text-white">What are you looking for?</HeroH1>
+          </center>
 
             {/* Input searchbar untuk return hanya datasets */}
-            <input type="search" className="form-control mt-3 heightSearch" placeholder="Search Datasets Here"/>
+            {/* <input type="search" className="form-control mt-3 heightSearch" placeholder="Search Datasets Here"/> */}
           </div>
         </div>
       </div>

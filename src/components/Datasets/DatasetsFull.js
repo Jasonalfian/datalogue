@@ -10,7 +10,7 @@ export default function DatasetsFull({categories}) {
 
 
   return( 
-    <section className="py-5">
+    <section className="py-3">
         <div className="container">
       <div class="row justify-content-center py-3">
       {

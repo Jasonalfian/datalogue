@@ -8,6 +8,7 @@
 
   
 const path = require("path")
+const {paginate} = require('gatsby-awesome-pagination')
 
 // create pages dynamically
 exports.createPages = async ({ graphql, actions }) => {
@@ -17,6 +18,7 @@ exports.createPages = async ({ graphql, actions }) => {
     {
       infographics: allStrapiInfographics {
         nodes {
+          id
           Title
         }
       }
@@ -32,6 +34,14 @@ exports.createPages = async ({ graphql, actions }) => {
       }
     }
   `)
+
+  paginate({
+    createPage,
+    items: result.data.infographics.nodes,
+    itemsPerPage:12,
+    pathPrefix:'/Infographics',
+    component: path.resolve(`src/pageTemplate/PaginationInfographicsTemplate.js`)
+  })
 
   result.data.infographics.nodes.forEach(infographics => {
     createPage({

@@ -2,18 +2,24 @@ import React from "react"
 import Title from "../Globals/Title"
 import { SRLWrapper } from "simple-react-lightbox"
 import ReactMarkdown from "react-markdown"
+import {Link} from "gatsby"
 
 const options = {
-  thumbnails: {
-    showThumbnails: false
-  }
+  // thumbnails: {
+  //   showThumbnails: false
+  // }
 }
+
+const back = "< Back"
 
 export default function Medium({descriptionMarkdown ,title, date, author, readtime, image}) {
   return (
     <div>
       <div class="container px-5">
-        <div class="py-5">
+        <div class="py-2">
+          <Link to={"/Infographics"}>
+            <p className="mb-3" style={{textDecoration: 'none',color: 'black'}}>{back}</p>
+          </Link>
           <Title title={title} />
           <div className="row justify-content-center">
 
