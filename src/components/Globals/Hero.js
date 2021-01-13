@@ -14,7 +14,7 @@ export default function BackgroundSection({
     return (
         <BackgroundImage className={styleClass}
         fluid={img}>
-            <div class="container">
+            <div className="container">
             <h1 className="text-white text-center font-weight-bold">
                 {title}
             </h1>
@@ -26,7 +26,7 @@ export default function BackgroundSection({
         return (
             <BackgroundImage className={styleClass}
             fluid={img}>
-                <div class="container">
+                <div className="container">
                 <h1 className="color-tosca text-center font-weight-bold">
                     {title}
                 </h1>
@@ -38,10 +38,10 @@ export default function BackgroundSection({
         return(
         <BackgroundImage className={styleClass}
         fluid={img}>
-            <div class="container">
+            <div className="container">
             <div className="row h-100 mb-3">
                 <div className="columb mx-auto">
-                <img src={gambar}>
+                <img src={gambar} alt="">
             </img>   
                 </div>
             </div>

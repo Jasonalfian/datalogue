@@ -18,16 +18,10 @@ state={
                 path:'/Infographics',
                 text:'Infographics'
             }
-            // ,{
-            //     id:3,
-            //     path:'/login',
-            //     text:'Login'
-            // }
         ]
 }
  
 navbarHandler=() => {
-    console.log("Tes")
     this.state.navbarOpen?this.setState(
         {navbarOpen:false,css:"collapse navbar-collapse"})
         :this.setState({
@@ -48,7 +42,7 @@ navbarHandler=() => {
 </button>
 
 <div className={this.state.css}>
-<ul className="navbar-nav ml-auto mr-5">
+<ul className="navbar-nav ml-sm-auto ml-3 mr-5">
 {/* <form className="form-inline">
 
         //Placeholder input searchbar
@@ -56,7 +50,7 @@ navbarHandler=() => {
              </form> */}
                         {this.state.links.map(link =>{
                             return (
-                               <li key={link.id} className="nav-item navbarsize">
+                               <li key={link.id} className="ml-2 mt-1 nav-item navbarsize">
                                    <Link to={link.path} className="nav-link text-capitalized">
                                        {link.text}
                                    </Link>

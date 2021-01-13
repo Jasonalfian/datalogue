@@ -24,11 +24,6 @@ const Pager = ({pageContext}) => {
         currentPage=parseInt(res)+1
     }
 
-    console.log(previousPagePath)
-    console.log(nextPagePath)
-    console.log(res)
-    console.log(res2)
-
     return(
     <center>
         <div className="row justify-content-center pb-4">

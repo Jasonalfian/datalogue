@@ -10,7 +10,7 @@ export default function info() {
         <br/>
         <h1 className="text-white font-weight-bold mt-n4">Untuk Publik</h1>
         <div className="row">
-          <img className="gifgrafik py-4 mx-auto" imgstyle={{objectFit: "contain"}} 
+          <img className="gifgrafik py-4 mx-auto" imgstyle={{objectFit: "contain"}} alt="" 
           style={{ height: "95%", width: "95%" }} src={connect}></img>
         </div>
         <div className="rataKanan">

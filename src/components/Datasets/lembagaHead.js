@@ -1,18 +1,16 @@
 import React from "react"
-import LembagaPic from "../../images/icon organisasi putih 1.png"
 import styled from "styled-components"
 import Img from "gatsby-image"
 import {Link} from "gatsby"
 
 const LembagaHead = ({category}) => {
 
-  console.log(category.shortDescription)
   const back ="< Back"
 
   return (
     <div className="bg-black">
     <container>
-      <div className ="ml-2 ml-sm-5 py-3">
+      <div className ="ml-3 ml-sm-5 py-3">
           <Link to={"/Datasets"}>
             <p className="mb-n3" style={{textDecoration: 'none',color: 'white'}}>{back}</p>
           </Link>

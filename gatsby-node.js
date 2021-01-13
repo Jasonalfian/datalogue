@@ -63,3 +63,75 @@ exports.createPages = async ({ graphql, actions }) => {
     })
   })
 }
+
+const { createRemoteFileNode } = require(`gatsby-source-filesystem`)
+exports.onCreateNode = async ({
+ node,
+ actions,
+ store,
+ cache,
+ createNodeId,
+}) => {
+const { createNode } = actions
+
+// replace ".sliderHome" for the name of multiple media in Strapi CMS
+let sliderImages = node.infographics
+
+// replace “StrapiHome” for your node type
+
+if (node.internal.type === "strapiInfographics") {
+  if (sliderImages.length > 0) {
+    // sliderImages.forEach(el => console.log(el))
+    const images = await Promise.all(
+      sliderImages.map(el =>
+        createRemoteFileNode({
+          url: `http://167.205.57.47:1337${el.url}`,
+          parentNodeId: node.id,
+          store,
+          cache,
+          createNode,
+          createNodeId,
+        })
+       )
+     )
+
+    sliderImages.forEach((image, i) => {
+      image.localFile___NODE = images[i].id
+    })
+   }
+ }
+}
+
+// exports.onCreateNode = async ({
+//   node,
+//   actions,
+//   store,
+//   cache,
+//   createNodeId,
+// }) => {
+//   const { createNode } = actions
+  
+// let infographics = node.images
+
+//   if (node.internal.type === "strapiInfographics") {
+//     if (infographics.length > 0) {
+//       infographics.forEach(el => console.log(el))
+//       const images = await Promise.all(
+//         infographics.map(el =>
+//           createRemoteFileNode({
+//             url: `http://167.205.57.47:1337/${el.url}`,
+//             parentNodeId: node.id,
+//             store,
+//             cache,
+//             createNode,
+//             createNodeId,
+//           })
+//         )
+//       )
+   
+//      infographics.forEach((image, i) => {
+//         image.localFile___NODE = images[i].id
+//       })
+//     }
+//   }
+// }

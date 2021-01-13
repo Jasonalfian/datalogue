@@ -1,5 +1,5 @@
 import React from "react"
-import { Link, graphql } from "gatsby"
+import {graphql } from "gatsby"
 
 import Layout from "../components/layout"
 import NavbarDark from "../components/Globals/NavbarDark"
@@ -14,20 +14,13 @@ export default ({ data }) => {
         allStrapiCategories: { nodes: Categories },
     } = data
 
-    return ( <
-        Layout >
-        <
-        NavbarDark / >
-        <
-        SEO title = "Home" / >
-        <
-        SearchDatasets / >
-        <
-        DatasetsFull categories = { Categories }
-        /> <
-        Kontak / >
-        <
-        /Layout>
+    return ( <Layout>
+        <NavbarDark/>
+        <SEO title = "Home"/>
+        <SearchDatasets/>
+        <DatasetsFull categories = { Categories }/> 
+        <Kontak/>
+        </Layout>
     )
 }
 

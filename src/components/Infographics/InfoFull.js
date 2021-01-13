@@ -3,7 +3,6 @@ import Card2 from '../Globals/Card2'
 
 export default function InfoFull(infographics) {
 
-  console.log(infographics.infographics)
     return( 
     <section className="pt-3">
       <div className="container">

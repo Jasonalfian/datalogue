@@ -25,7 +25,6 @@ export default ({data}) => {
   const {
     allStrapiKolaborasi: {nodes: Kolaborasi},
   } = data
-  // console.log(Kolaborasi)
 
     return( 
     <section className="py-5 fact">

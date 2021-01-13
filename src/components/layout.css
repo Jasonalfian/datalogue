@@ -235,21 +235,22 @@ h7{
   max-width: var(--max-width);
 }
 .btn-container {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
+  display:block;
   margin-bottom: 2rem;
+  align-content: center;
 }
+
 .job-btn {
   background: transparent;
   border-color: transparent;
   text-transform: capitalize;
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   letter-spacing: var(--spacing);
   margin: 1rem 0.5rem;
   transition: var(--transition);
   cursor: pointer;
-  padding: 0.25rem 0;
+  text-align:left;
+  padding: 0.25rem 0.5rem;
   line-height: 1;
 }
 .job-btn:hover {
@@ -300,11 +301,13 @@ h7{
     column-gap: 4rem;
   }
   .btn-container {
+    display: flex;
     flex-direction: column;
     justify-content: flex-start;
   }
   .job-btn {
     margin-bottom: 1rem;
+    font-size: 1.5rem;
   }
   .active-btn {
     box-shadow: -2px 0 var(--clr-primary-5);
@@ -316,7 +319,7 @@ h7{
 
 /* section */
 .section {
-  padding: 5rem 0;
+  padding: 2rem 0;
 }
 
 .section-center {
@@ -327,6 +330,9 @@ h7{
 @media screen and (min-width: 992px) {
   .section-center {
     width: 95vw;
+  }
+  .section {
+    padding: 5rem 0;
   }
 }
 /* added during recording */

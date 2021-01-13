@@ -36,7 +36,7 @@ const data = [
 ]
 const links = data.map(link => {
   return (
-    <li key={link.id}>
+    <li className="ml-2" key={link.id}>
       <a href={link.url} className="social-link">
         {link.icon}
       </a>

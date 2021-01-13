@@ -1,7 +1,6 @@
 import React from 'react'
 import styled from "styled-components"
-import videos from "../../images/ending pisan hires.mp4"
-import LazyLoad from 'react-lazyload';
+import videogif from "../../images/ending-min.gif"
 
 const VideoBG = () => {
     return (
@@ -9,7 +8,8 @@ const VideoBG = () => {
             {/* <LazyLoad> */}
             <div data-sal="fade" data-sal-duration="1000" data-sal-easing="ease" >
             <HeroBG>
-                <video className="videobg" src={videos} type='video/mp4' loop muted autoPlay playsInline/>
+                <img className = "videobg" src={videogif} alt=""/>
+                {/* <video className="videobg" src={videos} type='video/mp4' loop muted autoPlay playsInline/> */}
             </HeroBG>
             </div>
             {/* </LazyLoad> */}

@@ -1,5 +1,5 @@
 import React from "react"
-import { Link, graphql } from "gatsby"
+import {graphql } from "gatsby"
 
 import Layout from "../components/layout"
 import NavbarDark from "../components/Globals/NavbarDark"
@@ -15,7 +15,6 @@ const {
   allStrapiInfographics: {nodes: Infographics},
 } = data
 
-// console.log(data)
 return (
   <Layout>
     <NavbarDark/>
