@@ -91,6 +91,7 @@ const OneDataset = ({ dataset }) => {
                         size = "small"
                         href = { params.value }
                         target = "_blank"
+                        rel= "noopener noreferrer"
                         style = {
                             { marginLeft: 0 }
                         } >

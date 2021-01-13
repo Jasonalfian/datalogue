@@ -1,5 +1,5 @@
 import React from "react"
-import { Link, graphql } from "gatsby"
+import { graphql } from "gatsby"
 
 import Layout from "../components/layout"
 import Navbar from "../components/Globals/Navbar"
@@ -35,9 +35,9 @@ const IndexPage = ({ data }) => (
       styleClass="default-background"
       gambar={logoGajah}
       children={
-        <Link to="https://km.itb.ac.id/">
+        <a href="https://km.itb.ac.id/" target="_blank" rel="noopener noreferrer">
           <button className="btn btn-tosca"> Lihat lebih lanjut </button>
-        </Link>
+        </a>
       }
     />
   </Layout>
