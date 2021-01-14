@@ -161,6 +161,19 @@ h7{
   flex-direction: row;
   list-style-type: none;
 }
+
+ul{
+  flex-direction: column;
+  display: flex;
+  list-style-type: disc;
+  list-style-position: inside;
+}
+
+ol{
+  flex-direction: column;
+  display: flex;
+}
+
 .social-link {
   font-size: 2rem;
   color: var(--mainYellow);

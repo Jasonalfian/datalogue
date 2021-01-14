@@ -46,19 +46,6 @@ query ($skip: Int!, $limit: Int!) {
           }
         }
       }
-      infographics {
-        id
-        url
-        formats {
-          medium {
-            childImageSharp {
-              fluid {
-                ...GatsbyImageSharpFluid_tracedSVG
-              }
-            }
-          }
-        }
-      }
     }
   }
 }

@@ -11,17 +11,30 @@ const MediumPage = ({data}) => {
   const author = data.infographic.Author
   const minutesRead = data.infographic.minutesRead
   const DescriptionMarkdown = data.infographic.descriptionMarkdown
-  const infographic = data.infographic.infographics
+  const infographicc =  data.infographic.infographic.childImageSharp.fluid
+  var infographic2 = ""
+  var infographic3 = ""
 
+  if (data.infographic.infographic2 === null){
+    infographic2 =  ""
+  } else {
+    infographic2 =  data.infographic.infographic2.childImageSharp.fluid
+  }
 
-  
+  if (data.infographic.infographic3 === null){
+    infographic3 =  ""
+  } else {
+    infographic3 =  data.infographic.infographic3.childImageSharp.fluid
+  }
+
+  // const infographic2 =  data.infographic.infographic2.childImageSharp.fluid
   // const infographic = JSON.stringify(Object.values(data.infographic.infographics[0].url)).slice(2,-2) 
 
   return(
   <Layout>
     <Navbar/>
     <Medium descriptionMarkdown={DescriptionMarkdown} date={date} author={author} readtime={minutesRead} title={title}
-    image={infographic} />
+    imagee={infographicc} image2={infographic2} image3={infographic3}/>
   </Layout>
   )
 }
@@ -37,9 +50,26 @@ export const query = graphql`
       descriptionMarkdown
       Title
       minutesRead
-      infographics {
-        id
-        url
+      infographic{
+        childImageSharp {
+          fluid {
+            ...GatsbyImageSharpFluid_tracedSVG
+          }
+        }
+      }
+      infographic2{
+        childImageSharp {
+          fluid {
+            ...GatsbyImageSharpFluid_tracedSVG
+          }
+        }
+      }
+      infographic3{
+        childImageSharp {
+          fluid {
+            ...GatsbyImageSharpFluid_tracedSVG
+          }
+        }
       }
     }
   }

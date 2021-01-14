@@ -10,6 +10,17 @@
 const path = require("path")
 const {paginate} = require('gatsby-awesome-pagination')
 
+exports.createSchemaCustomization = ({ actions }) => {
+  const { createTypes } = actions
+  const typeDefs = `
+    type strapiInfographic implements Node {
+      infographic2: String
+      infographic3: String
+    }
+  `
+  createTypes(typeDefs)
+}
+
 // create pages dynamically
 exports.createPages = async ({ graphql, actions }) => {
   const { createPage } = actions

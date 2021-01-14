@@ -15,8 +15,6 @@ export default function InfoFull(infographics) {
             })}
 
         {/* <Card img={tes}title="Infografis" desc="Memberikan informasi dalam bentuk gambar yang ciamik" path="/Medium"/> */}
-        
-        
         </div>
       </div>
   </section>
