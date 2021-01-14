@@ -26,6 +26,5 @@ export default function SearchSection() {
 const HeroH1 = styled.div`
     font-size: clamp(2.5rem, 7vw, 2.5rem);
     margin-bottom: 1.5rem;
-    letter-spacing: 3px;
     padding: 0 1 rem;
 `

@@ -1,6 +1,7 @@
 import React from 'react'
 import BackgroundImage from "gatsby-background-image"
 import Menu from '../Home/Menu'
+import styled from "styled-components"
 
 export default function BackgroundSection({
     img,
@@ -46,9 +47,9 @@ export default function BackgroundSection({
                 </div>
             </div>
         
-            <h1 className="title text-white text-center font-weight-bold mb-4">
+            <HeroH1 className="title text-white text-center font-weight-bold mb-4">
                 {title}
-            </h1>
+            </HeroH1>
 
             <div className="row h-100">
                 <div className="column mx-auto">
@@ -65,3 +66,9 @@ BackgroundSection.defaultProps = {
     title:"default title",
     styleClass:"default-background"
 }
+
+const HeroH1 = styled.div`
+    font-size: clamp(2.5rem, 7vw, 3rem);
+    padding: 0 1 rem;
+    font-weight:900;
+`

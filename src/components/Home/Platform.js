@@ -1,14 +1,14 @@
 import React from "react"
 import connect from "../../images/connect.png"
-
+import styled from "styled-components"
 
 export default function info() {
   return (
     <section className="py-5 platform">
       <div className="container">
-        <h1 className="text-white font-weight-bold">Satu <span className="oneData">Data</span> Satu <span className="oneData">Platform</span></h1>
+        <HeroH1 className="text-white font-weight-bold">Satu <span className="oneData">Data</span> Satu <span className="oneData">Platform</span></HeroH1>
         <br/>
-        <h1 className="text-white font-weight-bold mt-n4">Untuk Publik</h1>
+        <HeroH1 className="text-white font-weight-bold mt-n4">Untuk Publik</HeroH1>
         <div className="row">
           <img className="gifgrafik py-4 mx-auto" imgstyle={{objectFit: "contain"}} alt="" 
           style={{ height: "95%", width: "95%" }} src={connect}></img>
@@ -24,3 +24,9 @@ export default function info() {
     </section>
   )
 }
+
+const HeroH1 = styled.div`
+    font-size: clamp(2.5rem, 7vw, 3rem);
+    padding: 0 1 rem;
+    font-weight:900;
+`

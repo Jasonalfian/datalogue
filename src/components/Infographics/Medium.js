@@ -16,7 +16,7 @@ const back = "< Back"
 export default function Medium({descriptionMarkdown ,title, date, author, readtime, imagee, image2, image3}) {
   return (
     <div>
-      <div class="container px-5">
+      <div class="container ">
         <div class="py-2">
 
           <Link to={"/Infographics"}>
@@ -84,3 +84,4 @@ export default function Medium({descriptionMarkdown ,title, date, author, readti
     </div>
   )
 }
+
