@@ -9,7 +9,8 @@ const LembagaHead = ({category}) => {
 
   return (
     <div className="bg-black">
-    <container>
+    <div className="container">
+      <div className="">
       <div className ="ml-3 ml-sm-5 py-3">
           <Link to={"/Datasets"}>
             <p className="mb-n3" style={{textDecoration: 'none',color: 'white'}}>{back}</p>
@@ -19,7 +20,7 @@ const LembagaHead = ({category}) => {
     <div className="infographicSearch d-flex align-items-center justify-content-center">
       
       <container className="mt-n5">
-        <div className="row mb-n4">
+        <div className="row mb-n3">
           <div className="col-12">
             <center>
               <Img style={{ height: "200px", width: "200px" }} fluid={category.logowhite.childImageSharp.fluid}/>
@@ -43,7 +44,8 @@ const LembagaHead = ({category}) => {
         </div>
       </container>
     </div>
-    </container>
+    </div>
+    </div>
     </div>
   )
 }
@@ -51,7 +53,7 @@ const LembagaHead = ({category}) => {
 export default LembagaHead
 
 const HeroH1 = styled.div`
-    font-size: clamp(2rem, 2vw, 3rem);
+    font-size: clamp(1.5rem, 2vw, 3rem);
     /* margin-bottom: 1.5rem; */
     /* letter-spacing: 3px; */
     /* padding: 0 1 rem; */

@@ -10,12 +10,12 @@ export default function Kontak() {
             <p className="text-white mb-4">
                 Apakah anda tidak puas dan tidak menemukan data yang dicari?
                 <br/>
-                Bisa langsung ditanyakan kepada <span className="font-weight-bold">Contact Person</span> di bawah ini :
+                Bisa langsung ditanyakan kepada Id Line <span className="font-weight-bold">Contact Person</span> di bawah ini :
             </p>
             <p className="mb-2 text-white">
-                Email: <span className="font-weight-bold">data@km.itb.ac.id</span> 
+                Lidya Jessica: <span className="font-weight-bold">jessica_han03</span> 
                 <br/>
-                Instagram: <span className="font-weight-bold">https://instagram.com/km.itb/</span> 
+                Muhammad Yanza Hattari: <span className="font-weight-bold">yanzahattari</span> 
             </p>
 
             {/* Untuk input searchbar */}

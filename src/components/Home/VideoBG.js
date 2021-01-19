@@ -1,6 +1,6 @@
 import React from 'react'
 import styled from "styled-components"
-import videogif from "../../images/ending-min.gif"
+import videogif from "../../images/scale85.gif"
 
 const VideoBG = () => {
     return (
@@ -13,13 +13,13 @@ const VideoBG = () => {
             </HeroBG>
             </div>
             {/* </LazyLoad> */}
-            <HeroContent>
+            {/* <HeroContent>
                 <HeroItems>
                     <HeroH1 data-sal="fade" data-sal-duration="1000" data-sal-easing="ease">
                         datalogue
                     </HeroH1>
                 </HeroItems>
-            </HeroContent>
+            </HeroContent> */}
         </HeroContainer>
     //     <div>
     //         <video src={video} type="video/mp4" loop muted autoPlay playsInLine></video>
@@ -50,28 +50,28 @@ const HeroBG = styled.div`
     overflow: hidden;
 `
 
-const HeroContent = styled.div`
-    z-index: 3;
-    height: calc(100vh-80px);
-    max-height: 100%100vh;
-    padding: 0rem calc((100vw-1300px)/2);
-`
-const HeroItems = styled.div`
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align:center;
-    height:100vh;
-    max-height:100%;
-    padding:0;
-    color:#000;
-    line-height: 1.1;
-    font-weight: bold;
-`
-const HeroH1 = styled.div`
-    font-size: clamp(3rem, 8vw, 6rem);
-    margin-bottom: 1.5rem;
-    letter-spacing: 3px;
-    padding: 0 1 rem;
-`
+// const HeroContent = styled.div`
+//     z-index: 3;
+//     height: calc(100vh-80px);
+//     max-height: 100%100vh;
+//     padding: 0rem calc((100vw-1300px)/2);
+// `
+// const HeroItems = styled.div`
+//     display: flex;
+//     flex-direction: column;
+//     justify-content: center;
+//     align-items: center;
+//     text-align:center;
+//     height:100vh;
+//     max-height:100%;
+//     padding:0;
+//     color:#000;
+//     line-height: 1.1;
+//     font-weight: bold;
+// `
+// const HeroH1 = styled.div`
+//     font-size: clamp(3rem, 8vw, 6rem);
+//     margin-bottom: 1.5rem;
+//     letter-spacing: 3px;
+//     padding: 0 1 rem;
+// `

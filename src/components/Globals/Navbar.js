@@ -55,7 +55,7 @@ navbarHandler=() => {
              </form> */}
                         {this.state.links.map(link =>{
                             return (
-                               <li key={link.id} className="ml-2 nav-item navbarsize">
+                               <li key={link.id} className="ml-4 nav-item navbarsize">
                                    <Link to={link.path} className="nav-link text-capitalized">
                                        {link.text}
                                    </Link>

@@ -16,9 +16,9 @@ export default function BackgroundSection({
         <BackgroundImage className={styleClass}
         fluid={img}>
             <div className="container">
-            <h1 className="text-white text-center font-weight-bold">
+            <HeroH1 className="text-white text-center">
                 {title}
-            </h1>
+            </HeroH1>
             <Menu/>
             </div>
             {children}
@@ -31,7 +31,6 @@ export default function BackgroundSection({
                 <h1 className="color-tosca text-center font-weight-bold">
                     {title}
                 </h1>
-                <Menu/>
                 </div>
                 {children}
             </BackgroundImage>
@@ -47,9 +46,9 @@ export default function BackgroundSection({
                 </div>
             </div>
         
-            <HeroH1 className="title text-white text-center font-weight-bold mb-4">
+            <HeroH2 className="title text-white text-center font-weight-bold mb-4">
                 {title}
-            </HeroH1>
+            </HeroH2>
 
             <div className="row h-100">
                 <div className="column mx-auto">
@@ -69,6 +68,12 @@ BackgroundSection.defaultProps = {
 
 const HeroH1 = styled.div`
     font-size: clamp(2.5rem, 7vw, 3rem);
+    padding: 0 1 rem;
+    font-weight:900;
+`
+
+const HeroH2 = styled.div`
+    font-size: clamp(2rem, 7vw, 3rem);
     padding: 0 1 rem;
     font-weight:900;
 `

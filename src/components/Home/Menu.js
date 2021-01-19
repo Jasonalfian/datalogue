@@ -1,4 +1,5 @@
 import React from "react"
+import styled from "styled-components"
 
 export default function info() {
   
@@ -8,11 +9,13 @@ export default function info() {
           {/* <Title title="Our Story"/> */}
         <div className="row">
           <div className="col-10 col-sm-11 mx-auto text-center">
-            <h3 data-sal="slide-up" data-sal-duration="1000" data-sal-easing="ease" className="mb-5 font-weight-bold">
+            <HeroH2 
+            // data-sal="slide-up" data-sal-duration="1000" data-sal-easing="ease" 
+            className="mb-5 font-weight-bold">
               <span className="oneData">Datalogue</span> adalah website yang dibuat oleh Kemenkoan Komunikasi Kreatif dan Informasi
               KM ITB untuk memfasilitasi integrasi data di ITB dan memberikan akses publik
               terhadap data
-            </h3>
+            </HeroH2>
             {/* <Link to="/about/">
                 <button className="btn text-uppercase btn-yellow"> About Page </button>
             </Link> */}
@@ -22,3 +25,9 @@ export default function info() {
     </section>
   )
 }
+
+const HeroH2 = styled.div`
+    font-size: clamp(0.5rem, 6vw, 2rem);
+    padding: 0 1 rem;
+    font-weight:900;
+`

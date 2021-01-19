@@ -27,13 +27,13 @@ const Pager = ({pageContext}) => {
     return(
     <center>
         <div className="row justify-content-center pb-4">
-           <h3 className="px-2"> {previousPagePath && (
+           <h4 className="px-2"> {previousPagePath && (
                 <span><Link to={previousPagePath}>{res}</Link></span> 
-            )} </h3>
-           <h3 className="px-2"> {currentPage} </h3>
-           <h3 className="px-2"> {nextPagePath && (
+            )} </h4>
+           <h4 className="px-2"> {currentPage} </h4>
+           <h4 className="px-2"> {nextPagePath && (
                 <span><Link to={nextPagePath}>{res2}</Link></span>
-            )} </h3>
+            )} </h4>
         </div>
     </center>
     )

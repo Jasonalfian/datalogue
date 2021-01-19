@@ -57,21 +57,21 @@ const OneDataset = ({ dataset }) => {
         <h3 className = "font-weight-bold mb-3" > Deskripsi Singkat </h3>
 
         { /* Deskripsi singkat dari setiap subcategory */ } 
-        <p className = "text-justify" > { shortDescription } </p>
+        <p className = "text-justify mb-3" > { shortDescription } </p>
 
         { /* Isi dari table yang menampilkan setiap datasets yang ada */ }
 
-        <div className = "col-12 col-sm-12 col-md-12 col-lg-12 my-2" >
-        <div className = "card bg-white overflow border-0"
+        <div className = "col-12 col-sm-12 col-md-12 col-lg-12 my-4" >
+        <div className = "card bg-white overflow border-1"
         style = {
             { mihHeight: "100%" }
         } >
 
         <div style = {
-            { height: 600, width: 900 }
+            { height: 700, width: 900 }
         } >
         <DataGrid pageSize = { 10 }
-        autoPageSize showToolbar rowsPerPageOptions = {
+        showToolbar rowsPerPageOptions = {
             [10, 20, 50]
         }
         pagination scrollbarSize = { 15 }
