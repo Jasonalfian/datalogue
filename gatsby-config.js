@@ -8,16 +8,62 @@ module.exports = {
     author: `@gatsbyjs`,
   },
   plugins: [
-    // {
-    //   resolve: `gatsby-plugin-material-ui`,
-    //   options: {
-    //     pathToStylesProvider: `src\pages\Admin\Listdata.js`,
-    //   },
-    // },
-
+  
     `gatsby-plugin-material-ui`,
     `gatsby-plugin-react-helmet`,
     `gatsby-plugin-styled-components`,
+
+    {
+      resolve: 'gatsby-plugin-local-search',
+      options: {
+          name: 'pages',
+          engine: 'flexsearch',
+          query: `query {
+            allStrapiInfographics (
+              sort:{
+                fields: [id]
+                order: DESC
+              }
+            ){
+              nodes {
+                id
+                CardDescription
+                Title
+                coverCard {
+                  childImageSharp {
+                    fluid {
+                      aspectRatio
+                      sizes
+                      src
+                      srcSet
+                      tracedSVG
+                    }
+                  }
+                }
+              }
+            }
+          }
+          `,
+          ref: `id`,
+          index: [
+            'Title',
+            'CardDescription'],
+          store: [
+            `id`,
+            'Title',
+            'CardDescription',
+            `fluid`
+          ],
+          normalizer: ({data}) => 
+            data.allStrapiInfographics.nodes.map(node => ({
+              id: node.id,
+              Title: node.Title,
+              CardDescription: node.CardDescription,
+              fluid: node.coverCard.childImageSharp.fluid
+            }))
+          ,
+      }
+  },
 
     {
       resolve: `gatsby-source-filesystem`,
@@ -83,49 +129,5 @@ module.exports = {
           exitEventName: 'sal:out', // Exit event name
       }
     }
-
-    // {
-    //   resolve: `gatsby-transformer-video`,
-    //   options: {
-    //     /**
-    //      * Set if FFMPEG & FFPROBE should be downloaded if they are not found locally.
-    //      *
-    //      * Downloaded binaries are stored in `node_modules/.cache/gatsby-transformer-video-bins/`
-    //      *
-    //      * Default: true
-    //      */
-    //     downloadBinaries: false,
-    //     /**
-    //      * Optional: Pass your own binaries
-    //      *
-    //      * Assumes you store your binaries in the following pattern:
-    //      * ./bin/darwin/ffmpeg
-    //      * ./bin/darwin/ffprobe
-    //      * ./bin/linux/ffmpeg
-    //      * ./bin/linux/ffprobe
-    //      * ...
-    //      *
-    //      * Default: null
-    //      */
-    //     ffmpegPath: resolve(__dirname, "bin", platform(), "ffmpeg"),
-    //     ffprobePath: resolve(__dirname, "bin", platform(), "ffprobe"),
-
-    //     // Optional profiles for full fluent-ffmpeg access
-    //     profiles: {
-    //       sepia: {
-    //         extension: `mp4`,
-    //         converter: function ({ ffmpegSession, videoStreamMetadata }) {
-    //           // Example:
-    //           // https://github.com/gatsbyjs/gatsby/blob/gatsby-transformer-video/examples/using-gatsby-transformer-video/gatsby-config.js
-    //         },
-    //       },
-    //     },
-    //   },
-    // },
-
-    
-    // this (optional) plugin enables Progressive Web App + Offline functionality
-    // To learn more, visit: https://gatsby.dev/offline
-    // `gatsby-plugin-offline`,
   ],
 }

@@ -392,7 +392,7 @@ li {
 }
 
 .card-description {
-  height: 100px;
+  height: 120px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -438,3 +438,13 @@ li {
 .color-hover:hover{
   color:var(--homeSearch)!important;
 }
+
+/* .visually-hidden {
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+} */
