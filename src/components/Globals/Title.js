@@ -4,7 +4,7 @@ import styled from 'styled-components'
 export default function Title({title}) {
     return (
         <div className="row">
-            <div class="col text-center mb-3">
+            <div className="col text-center mb-3">
                 <HeroH1 className="font-weight-bold">{title}</HeroH1>
             </div>
         </div>

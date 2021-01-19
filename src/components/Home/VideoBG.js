@@ -9,21 +9,9 @@ const VideoBG = () => {
             <div data-sal="fade" data-sal-duration="1000" data-sal-easing="ease" >
             <HeroBG>
                 <img className = "videobg" src={videogif} alt=""/>
-                {/* <video className="videobg" src={videos} type='video/mp4' loop muted autoPlay playsInline/> */}
             </HeroBG>
             </div>
-            {/* </LazyLoad> */}
-            {/* <HeroContent>
-                <HeroItems>
-                    <HeroH1 data-sal="fade" data-sal-duration="1000" data-sal-easing="ease">
-                        datalogue
-                    </HeroH1>
-                </HeroItems>
-            </HeroContent> */}
         </HeroContainer>
-    //     <div>
-    //         <video src={video} type="video/mp4" loop muted autoPlay playsInLine></video>
-    //     </div>
     )
 }
 

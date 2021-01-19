@@ -12,13 +12,6 @@ export default function info() {
         <div className="row mx-sm-5 mx-3">
           <img className="gifgrafik py-5 mx-auto" style={{height:"100%",width:"100%"}} imgstyle={{objectFit: "contain"}} alt="" src={connect}></img>
         </div>
-        {/* <div className="rataKanan"
-        <p className="text-white font-weight-bold px-2 grafikdesc" align="right">
-        Integrasi data untuk kemudahan  bersama dalam melakukan pencarian. 
-        Dengan terkumpulnya seluruh data dalam 1 platform,
-         mencari sumber menjadi hal yang sangat singkat dan praktis.
-            </p>
-        </div> */}
       </div>
     </section>
   )

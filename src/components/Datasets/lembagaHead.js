@@ -19,7 +19,7 @@ const LembagaHead = ({category}) => {
       
     <div className="infographicSearch d-flex align-items-center justify-content-center">
       
-      <container className="mt-n5">
+      <div className="container mt-n5">
         <div className="row mb-n3">
           <div className="col-12">
             <center>
@@ -42,7 +42,7 @@ const LembagaHead = ({category}) => {
             </center>
           </div>
         </div>
-      </container>
+      </div>
     </div>
     </div>
     </div>
