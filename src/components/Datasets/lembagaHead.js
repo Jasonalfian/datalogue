@@ -13,7 +13,7 @@ const LembagaHead = ({category}) => {
       <div className="">
       <div className ="ml-3 ml-sm-5 py-3">
           <Link to={"/Datasets"}>
-            <p className="mb-n3" style={{textDecoration: 'none',color: 'white'}}>{back}</p>
+            <button className="mb-n3 btn" style={{textDecoration: 'none',color: 'white'}}>{back}</button>
           </Link>
           </div>
       

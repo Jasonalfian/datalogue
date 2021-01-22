@@ -12,7 +12,7 @@ const Category = ({
 
     return (
         
-      <div className="col-5 col-sm-6 col-md-6 col-lg-4 my-4">
+      <div className="col-5 col-sm-6 col-md-4 col-lg-3 my-4">
         <div className="card bg-light" style={{ mihHeight: "100%" }}>
         <Link to={title} style={{textDecoration: 'none',color: 'black'}}>
           <Img fluid={image} className="card-img-top2" />

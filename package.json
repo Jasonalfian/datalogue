@@ -1,7 +1,7 @@
 {
   "name": "data-km",
   "private": true,
-  "description": "Thank you Kyle and bootstrap for the wonderful starter template",
+  "description": "Webiste Data KM ITB",
   "version": "0.1.0",
   "author": "Kyle Mathews <mathews.kyle@gmail.com>",
   "dependencies": {

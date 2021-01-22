@@ -39,8 +39,8 @@ export default function BackgroundSection({
         <BackgroundImage className={styleClass}
         fluid={img}>
             <div className="container">
-            <div className="row h-100 mb-3">
-                <div className="columb mx-auto">
+            <div className="row mb-3">
+                <div className="column mx-auto">
                 <img src={gambar} alt="">
             </img>   
                 </div>
@@ -50,7 +50,7 @@ export default function BackgroundSection({
                 {title}
             </HeroH2>
 
-            <div className="row h-100">
+            <div className="row ">
                 <div className="column mx-auto">
                 {children}
                 </div>

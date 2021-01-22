@@ -1,6 +1,6 @@
 import React from 'react'
 import styled from "styled-components"
-import videogif from "../../images/scale85.gif"
+import videogif from "../../images/scale855.gif"
 
 const VideoBG = () => {
     return (

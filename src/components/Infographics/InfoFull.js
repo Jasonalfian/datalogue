@@ -4,7 +4,7 @@ import Card2 from '../Globals/Card2'
 export default function InfoFull(infographics) {
 
     return( 
-    <section className="pt-3 half-page">
+    <section className="pt-3">
       <div className="container">
         
           <div className="row justify-content-center py-3">

@@ -12,9 +12,8 @@ export default function info() {
             <HeroH2 
             // data-sal="slide-up" data-sal-duration="1000" data-sal-easing="ease" 
             className="mb-5 font-weight-bold">
-              <span className="oneData">Datalogue</span> adalah website yang dibuat oleh Kemenkoan Komunikasi Kreatif dan Informasi
-              KM ITB untuk memfasilitasi integrasi data di ITB dan memberikan akses publik
-              terhadap data
+              <span className="oneData">Datalogue</span> sebuah museum untuk mengintegrasikan seluruh data dan arsip 
+              publik milik Keluarga Mahasiswa ITB (KM ITB) di satu tempat
             </HeroH2>
             {/* <Link to="/about/">
                 <button className="btn text-uppercase btn-yellow"> About Page </button>

@@ -30,9 +30,9 @@ const IndexPage = ({ data }) => (
     <Kerjasama data={data} />
     <Hero
       img={data.img3.childImageSharp.fluid}
-      title="Kabinet Mahasiswa Institut Teknologi Bandung"
+      title="Keluarga Mahasiswa Institut Teknologi Bandung"
       content="no"
-      styleClass="default-background"
+      styleClass="hero75"
       gambar={logoGajah}
       children={
         <a href="https://km.itb.ac.id/" target="_blank" rel="noopener noreferrer">

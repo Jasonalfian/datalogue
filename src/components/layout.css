@@ -116,6 +116,15 @@ h7{
   background-size:cover;
 }
 
+.hero75{
+  height: 75vh;
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  background-position: center;
+  background-size:cover;
+}
+
 .background-2{
   min-height: 80vh;
 }
@@ -142,6 +151,7 @@ h7{
 
 .footer{
  background: var(--onePlatform);
+ min-height: 231px;
 }
 
 .about-background{
@@ -227,7 +237,7 @@ ol{
 }
 
 .fact{
-  min-height: 90vh;
+  min-height: 70vh;
   background-color: var(--mainWhite);
 }
 
@@ -257,7 +267,7 @@ ol{
   background: transparent;
   border-color: transparent;
   text-transform: capitalize;
-  font-size: 0.8rem;
+  font-size: 1rem;
   letter-spacing: var(--spacing);
   margin: 0.5rem 0.2rem;
   transition: var(--transition);
@@ -315,7 +325,7 @@ ol{
     width: 90vw;
     display: grid;
     grid-template-columns: 200px 1fr;
-    column-gap: 4rem;
+    column-gap: 2rem;
   }
   .btn-container {
     display: flex;
@@ -437,6 +447,10 @@ li {
 
 .color-hover:hover{
   color:var(--homeSearch)!important;
+}
+
+.heroheight {
+  max-height:75vw;
 }
 
 /* .visually-hidden {

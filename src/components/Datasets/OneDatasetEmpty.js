@@ -17,7 +17,7 @@ const OneDatasetEmpty = () => {
 export default OneDatasetEmpty
 
 const HeroH1 = styled.div`
-    font-size: clamp(1rem, 7vw, 3rem);
+    font-size: clamp(1rem, 7vw, 2rem);
     padding: 0 1 rem;
     font-weight:600;
 `

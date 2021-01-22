@@ -68,7 +68,7 @@ const OneDataset = ({ dataset }) => {
         } >
 
         <div style = {
-            { height: 700, width: 900 }
+            { height: 700, width: 1000 }
         } >
         <DataGrid pageSize = { 10 }
         showToolbar rowsPerPageOptions = {
@@ -78,13 +78,13 @@ const OneDataset = ({ dataset }) => {
         columns = {
             [
                 { field: `id`, hide: true },
-                { field: 'namaDataset', headerName: 'Nama Dataset', flex: 0.35 },
-                { field: 'penulis', headerName: 'Penulis', flex: 0.25 },
-                { field: 'tanggalPublikasi', headerName: 'Tanggal Publikasi', flex: 0.2 },
+                { field: 'namaDataset', headerName: 'Nama Dataset', flex: 0.4 },
+                { field: 'penulis', headerName: 'Penulis', flex: 0.3 },
+                { field: 'tanggalPublikasi', headerName: 'Publikasi', flex: 0.15 },
                 {
                     field: 'linkData',
                     headerName: 'Link Data',
-                    flex: 0.2,
+                    flex: 0.15,
                     renderCell: (params) => ( <
                         Button variant = "contained"
                         color = "primary"

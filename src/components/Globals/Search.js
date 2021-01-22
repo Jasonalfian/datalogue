@@ -1,6 +1,6 @@
 import React from 'react'
 
-const Search = ({ searchQuery, setSearchQuery }) => (
+const Search = ({ searchQuery, setSearchQuery, jenis}) => (
     <form
         action="/"
         method="get"
@@ -17,7 +17,7 @@ const Search = ({ searchQuery, setSearchQuery }) => (
             onInput={(e) => setSearchQuery(e.target.value)}
             type="text"
             id="header-search"
-            placeholder="Search Posters Here"
+            placeholder={(jenis==="infographic")?"Search Posters Here":"Search Datasets Here"}
             name="s"
         />
         {/* <button type="submit">Search</button> */}

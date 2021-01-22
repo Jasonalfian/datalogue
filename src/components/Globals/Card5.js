@@ -8,51 +8,44 @@ const MediumImage = ({
     if ((image3 !== "") && (image2 !== "") ){
     return (
       <div className="col-12">
-
+       <SRLWrapper>
       <div className="card bg-white border-0 mt-2 mb-3" style={{ mihHeight: "100%" }}>
-        <SRLWrapper>
           <Img fluid={image}/>
-        </SRLWrapper>  
       </div>
 
       <div className="card bg-white border-0 mt-2 mb-3" style={{ mihHeight: "100%" }}>
-        <SRLWrapper>
           <Img fluid={image2}/>
-        </SRLWrapper>  
       </div>
 
       <div className="card bg-white border-0 mt-2 mb-3" style={{ mihHeight: "100%" }}>
-        <SRLWrapper>
           <Img fluid={image3}/>
-        </SRLWrapper>  
       </div>
-
+      </SRLWrapper>  
     </div>
     )
   } else if ((image3 !== "") && (image2 === "")){
     return(
     <div className="col-12">
-    <div className="card bg-white border-0 mt-2 mb-3" style={{ mihHeight: "100%" }}>
-        <SRLWrapper>
+
+    <SRLWrapper>
+    <div className="card bg-white border-0 mt-2 mb-3" style={{ mihHeight: "100%" }}> 
           <Img fluid={image}/>
-        </SRLWrapper>  
-      </div>
+    </div>
 
       <div className="card bg-white border-0 mt-2 mb-3" style={{ mihHeight: "100%" }}>
-        <SRLWrapper>
           <Img fluid={image2}/>
-        </SRLWrapper>  
       </div>
+      </SRLWrapper> 
     </div>
     )
   } else {
     return (
     <div className="col-12">
+    <SRLWrapper>
     <div className="card bg-white border-0 mt-2 mb-3" style={{ mihHeight: "100%" }}>
-        <SRLWrapper>
           <Img fluid={image}/>
-        </SRLWrapper>  
       </div>
+      </SRLWrapper> 
     </div>
     )
   } 

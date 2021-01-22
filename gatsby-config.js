@@ -65,6 +65,46 @@ module.exports = {
       }
   },
 
+  {
+    resolve: 'gatsby-plugin-local-search',
+    options: {
+        name: 'dataset',
+        engine: 'flexsearch',
+        query: `query {
+          allStrapiDataests {
+            nodes {
+              id
+              Author
+              Link
+              Name
+              publishedDate
+            }
+          }
+        }
+        `,
+        ref: `Name`,
+        index: [
+          'Name',
+          'Author'],
+        store: [
+          'id',
+          `Name`,
+          'Author',
+          'Link',
+          `publishedDate`
+        ],
+        normalizer: ({data}) => 
+          data.allStrapiDataests.nodes.map(node => ({
+            id: node.id,
+            Name: node.Name,
+            Author: node.Author,
+            Link: node.Link,
+            publishedDate: node.publishedDate
+          }))
+        ,
+    }
+},
+
     {
       resolve: `gatsby-source-filesystem`,
       options: {
