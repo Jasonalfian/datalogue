@@ -3,7 +3,7 @@ import {Link} from "gatsby"
 import Img from "gatsby-image"
 
 const Infographic = ({
-    coverCard, CardDescription, Title}) => {
+    coverCard, Title}) => {
     
     var title = "/Infographics/"+Title  
     var image = coverCard.childImageSharp.fluid
@@ -17,8 +17,7 @@ const Infographic = ({
         
           <div className="card-body card-description2">
             <div className="center">
-            <h4 style={{fontWeight: 'bold'}}>{Title}</h4>
-            <h6>{CardDescription}</h6>
+            <h4>{Title}</h4>
             </div>
           </div>
           </Link>

@@ -17,7 +17,7 @@ export default function Medium({descriptionMarkdown ,title, date, author, readti
             <p className="mb-3" style={{textDecoration: 'none',color: 'black'}}>{back}</p>
           </Link>
           <Title title={title} />
-          <div className="row justify-content-center">
+          <div className="row justify-content-center mx-1">
 
             {/* Placeholder tanggal */}
             <p className="px-2">{date}</p>

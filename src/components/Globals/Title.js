@@ -12,6 +12,6 @@ export default function Title({title}) {
 }
 
 const HeroH1 = styled.div`
-    font-size: clamp(2.5rem, 7vw, 3rem);
+    font-size: clamp(2rem, 7vw, 3rem);
     padding: 0 1 rem;
 `
