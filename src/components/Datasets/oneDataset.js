@@ -14,21 +14,10 @@ const OneDataset = ({ dataset }) => {
             id: dataests[i].id,
             namaDataset: dataests[i].Name,
             penulis: dataests[i].Author,
-            tanggalPublikasi: dataests[i].publishedDate,
+            tanggalPublikasi: (dataests[i].publishedDate).substring(0,4),
             linkData: dataests[i].Link
         }
     }
-
-    // for (let i=2;i<15;i++){
-    //   rows[i] = {
-    //     id:i,
-    //     namaDataset: "ayam",
-    //     penulis: "ayam",
-    //     tanggalPublikasi: "ayam",
-    //     linkData: "ayam"
-    //   }
-    // }
-
 
     return ( 
         <section className = "section jobs">
@@ -78,9 +67,9 @@ const OneDataset = ({ dataset }) => {
         columns = {
             [
                 { field: `id`, hide: true },
-                { field: 'namaDataset', headerName: 'Nama Dataset', flex: 0.4 },
+                { field: 'namaDataset', headerName: 'Nama Dataset', flex: 0.45 },
                 { field: 'penulis', headerName: 'Penulis', flex: 0.3 },
-                { field: 'tanggalPublikasi', headerName: 'Publikasi', flex: 0.15 },
+                { field: 'tanggalPublikasi', headerName: 'Tahun', flex: 0.1 },
                 {
                     field: 'linkData',
                     headerName: 'Link Data',

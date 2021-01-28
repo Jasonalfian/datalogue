@@ -124,7 +124,11 @@ module.exports = {
           'dataests',
           'kolaborasi',
         ],
-        queryLimit: 10000,
+        singleTypes: [
+          'form-kontak',
+          'footer',
+        ],
+        queryLimit: 100000,
       },
     },
 

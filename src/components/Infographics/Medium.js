@@ -30,9 +30,9 @@ export default function Medium({descriptionMarkdown ,title, date, author, readti
             </div>
         
             <div className="row py-3 mx-2 text-justify">
-              <div className="col-12">
+              <div className="col-12 mb-3">
 
-              <ReactMarkdown className=""
+              <ReactMarkdown
                 source={descriptionMarkdown}
                 transformImageUri={uri=>uri.startsWith('http') ? uri:`${process.env.IMAGE_BASE_URL}${uri}`}/>
               </div>

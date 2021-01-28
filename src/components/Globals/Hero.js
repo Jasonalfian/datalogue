@@ -2,6 +2,7 @@ import React from 'react'
 import BackgroundImage from "gatsby-background-image"
 import Menu from '../Home/Menu'
 import styled from "styled-components"
+import Kontributor from "../Datasets/Kontributor"
 
 export default function BackgroundSection({
     img,
@@ -9,6 +10,7 @@ export default function BackgroundSection({
     title,
     content,
     gambar,
+    linkForm,
     children}) {
 
     if(content==="yes"){   
@@ -23,7 +25,20 @@ export default function BackgroundSection({
             </div>
             {children}
         </BackgroundImage>
-    )} if(content==="404"){   
+    )} if(content==="kolaborator"){   
+        return (
+            <BackgroundImage className={styleClass}
+            fluid={img}>
+                <div className="container">
+                <HeroH1 className="text-white text-center">
+                    {title}
+                </HeroH1>
+                <Kontributor linkForm={linkForm}/>
+                </div>
+                {children}
+            </BackgroundImage>
+        )}
+    if(content==="404"){   
         return (
             <BackgroundImage className={styleClass}
             fluid={img}>
@@ -73,7 +88,7 @@ const HeroH1 = styled.div`
 `
 
 const HeroH2 = styled.div`
-    font-size: clamp(2rem, 7vw, 3rem);
-    padding: 0 1 rem;
+    font-size: clamp(1.6rem, 6vw, 3rem);
+    padding: 0 1rem;
     font-weight:900;
 `

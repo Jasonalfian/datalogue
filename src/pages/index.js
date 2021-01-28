@@ -9,7 +9,7 @@ import Platform from "../components/Home/Platform"
 import Kerjasama from "../components/Home/Kerjasama"
 import Video from "../components/Home/VideoBG"
 import Fact from "../components/Home/Fact"
-// import HomeSearch from "../components/Home/HomeSearch"
+import HomeSearch from "../components/Home/HomeSearch"
 import logoGajah from "../images/gajhah putih 1.png"
 
 const IndexPage = ({ data }) => (
@@ -26,11 +26,11 @@ const IndexPage = ({ data }) => (
     />
     <Platform />
     <Fact />
-    {/* <HomeSearch /> */}
+    <HomeSearch data={data}/>
     <Kerjasama data={data} />
     <Hero
       img={data.img3.childImageSharp.fluid}
-      title="Keluarga Mahasiswa Institut Teknologi Bandung"
+      title="Siapa itu Keluarga Mahasiswa Institut Teknologi Bandung?"
       content="no"
       styleClass="hero75"
       gambar={logoGajah}
@@ -62,6 +62,7 @@ export const query = graphql`
       }
     }
     allStrapiKolaborasi {
+      totalCount
       nodes {
         id
         logoLembaga {
@@ -72,6 +73,12 @@ export const query = graphql`
           }
         }
       }
+    }
+    allStrapiInfographics{
+      totalCount
+    }
+    allStrapiDataests{
+      totalCount
     }
   }
 `

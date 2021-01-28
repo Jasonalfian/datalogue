@@ -9,10 +9,12 @@ export default ({data}) => {
   } = data
 
     return( 
-    <section className="fact mb-sm-3">
+    <section className="fact mb-sm-3 mt-5">
     <div className="container">
       <div className="mx-3">
-      <HeroH1  data-sal="slide-up" data-sal-duration="1000" data-sal-easing="ease" className="font-weight-bold"> <span className="oneData">Kolaborasi </span>karya dengan
+      <HeroH1  
+      // data-sal="slide-up" data-sal-duration="1000" data-sal-easing="ease" 
+      className="font-weight-bold"> <span className="oneData">Kolaborasi </span>karya dengan
       </HeroH1>
     </div>
       <div className="justify-content-start row py-3 ml-1 mr-2">

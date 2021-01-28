@@ -11,6 +11,7 @@ import SearchResult from "../components/Datasets/searchResult"
 
 import SearchBar from "../components/Globals/Search"
 // import Kontak from "../components/Datasets/Kontak"
+import Hero from "../components/Globals/Hero"
 
 export const unFlattenResults = results =>
     results.map(post => {
@@ -18,13 +19,15 @@ export const unFlattenResults = results =>
         return {id,Name, Author, Link, publishedDate};
     })
 
-export default ({ data, }) => {
+export default ({ data }) => {
 
     const {
       localSearchDataset: {index,store},
         allStrapiCategories: { nodes: Categories },
     } = data
     
+    const form = data.strapiFormKontak.linkForm
+
     var query
     
     // const { search } = window.location
@@ -35,7 +38,7 @@ export default ({ data, }) => {
     const [searchQuery, setSearchQuery] = useState(query || '')
     
     const results = useFlexSearch(searchQuery, index, store)
-    console.log(results.length)
+    // console.log(results.length)
     // const Infographics = searchQuery ? unFlattenResults(results) : nodes
 
     return ( <Layout>
@@ -73,7 +76,15 @@ export default ({ data, }) => {
         {(searchQuery)?
         <p></p>:<DatasetsFull categories = { Categories }/> 
         }
-        {/* <Kontak/> */}
+
+      <Hero
+        img={data.img.childImageSharp.fluid}
+        title=""
+        content="kolaborator"
+        styleClass="kolaborator"
+        linkForm={form}
+      />
+        {/* <Kontak form={form}/> */}
         </Layout>
     )
 }
@@ -91,6 +102,16 @@ const HeroH2 = styled.div`
 
 export const query = graphql `
 query {
+  img: file(relativePath: { eq: "bgkontributor.png" }) {
+    childImageSharp {
+      fluid {
+        ...GatsbyImageSharpFluid_tracedSVG
+      }
+    }
+  }
+  strapiFormKontak{
+    linkForm
+  }
   localSearchDataset {
     index
     store

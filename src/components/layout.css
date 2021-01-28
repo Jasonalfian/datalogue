@@ -60,10 +60,10 @@ body{
   background: var(--clr-white);
 }
 
-h1,h2,h3,h4,h5,h6{
+/* h1,h2,h3,h4,h5,h6{ */
   /* font-family: 'Courier New', Courier, monospace!important; */
   /* letter-spacing: 0.25rem!important; */
-}
+/* } */
 
 @media screen and (min-width: 1px) {
   h1 {
@@ -126,7 +126,7 @@ h7{
 }
 
 .background-2{
-  min-height: 80vh;
+  min-height: 50vh;
 }
 
 .btn-yellow{
@@ -140,8 +140,15 @@ h7{
 }
 
 .btn-tosca{
+  width: 150px;
   color:var(--mainWhite);
   background:var(--oneData)
+}
+
+.btn-tosca-invert{
+  width:120px;
+  color:var(--oneData);
+  background:var(--mainWhite)
 }
 
 .btn-tosca:hover{
@@ -207,8 +214,8 @@ ol{
 }
 
 .homeSearch{
-  min-height:  50vh;
-  background-color: var(--homeSearch);
+  min-height:  60vh;
+  background-color: var(--onePlatform);
 }
 
 .homeSearch2{
@@ -216,9 +223,19 @@ ol{
   background-color: var(--homeSearch);
 }
 
+.kolaborator{
+  height: 50vh;
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  background-position: center;
+  background-size:cover;
+}
+
 .infographicSearch{
   min-height:  50vh;
   background-color: var(--onePlatform);
+  padding-bottom: 40px ;
 }
 
 .gifgrafik{
@@ -284,9 +301,9 @@ ol{
   color: var(--clr-primary-5);
   box-shadow: 0 2px var(--clr-primary-5);
 }
-.job-info {
+/* .job-info { */
   /* min-height: 420px; */
-}
+/* } */
 .job-info h3 {
   font-weight: 400;
 }
@@ -321,6 +338,18 @@ ol{
     min-height:  40vh;
     background-color: var(--onePlatform);
   }
+
+  .homeSearch2{
+    min-height: 50vh;
+  }
+
+  .hero75{
+    height: 100vh;
+  }
+  
+  .background-2{
+    min-height: 80vh;
+  }  
   .jobs-center {
     width: 90vw;
     display: grid;
@@ -402,7 +431,7 @@ li {
 }
 
 .card-description {
-  height: 120px;
+  height: 100px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -451,6 +480,11 @@ li {
 
 .heroheight {
   max-height:75vw;
+}
+
+p{
+  margin:0px;
+  padding:0px;
 }
 
 /* .visually-hidden {

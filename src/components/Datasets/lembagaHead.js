@@ -11,15 +11,16 @@ const LembagaHead = ({category}) => {
     <div className="bg-black">
     <div className="container">
       <div className="">
-      <div className ="ml-3 ml-sm-5 py-3">
+      <div className ="ml-3 ml-sm-5 pt-2">
           <Link to={"/Datasets"}>
-            <button className="mb-n3 btn" style={{textDecoration: 'none',color: 'white'}}>{back}</button>
+          <p style={{textDecoration: 'none',color: 'white'}}>{back}</p>
+            {/* <button className="mb-n3 btn" style={{textDecoration: 'none',color: 'white'}}>{back}</button> */}
           </Link>
           </div>
       
     <div className="infographicSearch d-flex align-items-center justify-content-center">
       
-      <div className="container mt-n5">
+      <div className="container">
         <div className="row mb-n3">
           <div className="col-12">
             <center>

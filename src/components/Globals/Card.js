@@ -7,7 +7,7 @@ export default function Card({img, title, desc, home, path }) {
 
   if (home === "yes") {
     return (
-      <div className="col-10 col-sm-10 col-md-8 col-lg-6 mx-auto my-3">
+      <div className="col-12 col-sm-10 col-md-8 col-lg-6 mx-auto my-3">
         <div className="card bg-light" style={{ mihHeight: "100%" }}>
         <Link to={path} style={{textDecoration: 'none',color: 'black'}}>
           <img src={img} alt="" className="card-img-top2 "/>

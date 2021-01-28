@@ -11,15 +11,14 @@ import PropTypes from "prop-types"
 import "./bootstrap.min.css"
 import "./layout.css"
 import SimpleReactLightbox from 'simple-react-lightbox'
-
 import Footer from "./Globals/Footer"
 
-const Layout = ({ children }) => (<>
-<SimpleReactLightbox>
-{children}
-</SimpleReactLightbox>
-<Footer/>
-</>
+const Layout = ({children}) => (<>
+    <SimpleReactLightbox>
+    {children}
+    </SimpleReactLightbox>
+    <Footer/>
+  </>
 )
 
 Layout.propTypes = {

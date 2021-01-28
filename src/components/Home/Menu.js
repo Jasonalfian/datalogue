@@ -8,12 +8,12 @@ export default function info() {
       <div className="container">
           {/* <Title title="Our Story"/> */}
         <div className="row">
-          <div className="col-10 col-sm-11 mx-auto text-center">
+          <div className="col-11 col-sm-11 mx-auto text-center">
             <HeroH2 
             // data-sal="slide-up" data-sal-duration="1000" data-sal-easing="ease" 
-            className="mb-5 font-weight-bold">
-              <span className="oneData">Datalogue</span> sebuah museum untuk mengintegrasikan seluruh data dan arsip 
-              publik milik Keluarga Mahasiswa ITB (KM ITB) di satu tempat
+            className="font-weight-bold">
+              <span className="oneData">Datalogue,</span> <br/>sebuah museum untuk mengintegrasikan seluruh data dan arsip 
+              publik milik Keluarga Mahasiswa ITB (KM ITB),<br/> di satu tempat.
             </HeroH2>
             {/* <Link to="/about/">
                 <button className="btn text-uppercase btn-yellow"> About Page </button>
@@ -26,7 +26,7 @@ export default function info() {
 }
 
 const HeroH2 = styled.div`
-    font-size: clamp(0.5rem, 6vw, 2rem);
+    font-size: clamp(0.4rem, 6vw, 2rem);
     padding: 0 1 rem;
     font-weight:900;
 `
