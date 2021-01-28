@@ -12,7 +12,7 @@ export default function Kontributor({linkForm}) {
                Ingin menjadi kontributor <br/> <span className="oneData">Data Publik KM ITB?</span>
             </HeroH2>
             <a href={linkForm} target="_blank" rel="noopener noreferrer">
-              <button className="btn btn-tosca">Klik disini </button>
+              <button className="btn btn-tosca">Klik di sini </button>
             </a>
 
           </div>

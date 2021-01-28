@@ -35,7 +35,7 @@ const SearchResultDataset = ({ dataset }) => {
         } >
         <DataGrid pageSize = { 10 }
         showToolbar rowsPerPageOptions = {
-            [10, 20, 50]
+            [10, 20, 50, 100]
         }
         pagination scrollbarSize = { 15 }
         columns = {

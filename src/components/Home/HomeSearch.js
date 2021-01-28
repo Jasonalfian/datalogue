@@ -14,7 +14,7 @@ export default function HomeSearch({data}) {
             <HeroH1 
             // data-sal="slide-up" data-sal-duration="1000" data-sal-easing="ease" 
             className="font-weight-bold text-white mb-5">
-                <span className="oneData">Data KM ITB</span> <br className="d-sm-none d-block"/>Dalam Angka
+                <span className="oneData">Data KM ITB</span> <br className="d-sm-none d-block"/>dalam Angka
             </HeroH1>
 
             <div className="row">

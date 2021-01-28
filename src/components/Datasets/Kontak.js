@@ -15,7 +15,7 @@ export default function Kontak({form}) {
             </HeroH2>
 
             <a href={form} target="_blank" rel="noopener noreferrer">
-              <button className="btn btn-tosca-invert">Klik disini </button>
+              <button className="btn btn-tosca-invert">Klik di sini </button>
             </a>
 
             {/* <p className="mb-2 text-white">
