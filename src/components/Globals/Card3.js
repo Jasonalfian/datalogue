@@ -4,9 +4,9 @@ import {Link} from "gatsby"
 import styled from "styled-components"
 
 const Category = ({
-    logodark, uid, Name}) => {
+    logodark, Name}) => {
     
-    var title = "/Datasets/"+ uid
+    var title = "/Datasets/"+ Name
     var image= logodark.childImageSharp.fluid
 
 

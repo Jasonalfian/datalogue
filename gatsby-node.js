@@ -40,7 +40,6 @@ exports.createPages = async ({ graphql, actions }) => {
     {
       categories: allStrapiCategories {
         nodes {
-          uid
           Name
         }
       }
@@ -67,10 +66,10 @@ exports.createPages = async ({ graphql, actions }) => {
 
   result2.data.categories.nodes.forEach(categories => {
     createPage({
-      path: `/Datasets/${categories.uid}`,
+      path: `/Datasets/${categories.Name}`,
       component: path.resolve(`src/pageTemplate/DatasetTemplate.js`),
       context: {
-        name: categories.uid,
+        name: categories.Name,
       },
     })
   })

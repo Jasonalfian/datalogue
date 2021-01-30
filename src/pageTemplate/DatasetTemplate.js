@@ -31,9 +31,9 @@ const DatasetPage = ({ data }) => {
 
 export const query = graphql `
   query 
-  getAllDatasets ($uid: String) {
+  getAllDatasets ($Name: String) {
     datasets: 
-    allStrapiSubCategories(filter: {categories: {elemMatch: {uid: {eq: $uid}}}}) {
+    allStrapiSubCategories(filter: {categories: {elemMatch: {Name: {eq: $Name}}}}) {
       nodes {
         id
         Name
@@ -47,9 +47,8 @@ export const query = graphql `
         }
       }
     }
-    strapiCategories(uid: {eq: $uid}) {
+    strapiCategories(Name: {eq: $Name}) {
       id
-      uid
       Name
       shortDescription
       logowhite {
