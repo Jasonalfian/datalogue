@@ -3,9 +3,9 @@ import {Link} from "gatsby"
 import Img from "gatsby-image"
 
 const Infographic = ({
-    coverCard, Title}) => {
+    coverCard, Title, uid}) => {
     
-    var title = "/Infographics/"+Title  
+    var title = "/Infographics/"+uid  
     var image = coverCard.childImageSharp.fluid
 
     return (

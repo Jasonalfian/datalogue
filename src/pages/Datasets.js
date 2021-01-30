@@ -119,6 +119,7 @@ query {
   allStrapiCategories(sort: {fields: priority, order: ASC}) {
     nodes {
       id
+      uid
       Name
       logodark {
         childImageSharp {

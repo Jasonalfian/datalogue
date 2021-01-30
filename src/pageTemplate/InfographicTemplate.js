@@ -7,6 +7,7 @@ import Medium from '../components/Infographics/Medium'
 
 const MediumPage = ({data}) => {
   const date = data.infographic.dateCreated
+  // const uid = data.infographic.uid
   const title = data.infographic.Title
   const author = data.infographic.Author
   const minutesRead = data.infographic.minutesRead
@@ -41,9 +42,10 @@ const MediumPage = ({data}) => {
 
 export const query = graphql`
   query 
-  getSingleInfographic($title: String) {
-    infographic: strapiInfographics(Title: {eq: $title}) {
+  getSingleInfographic($uid: String) {
+    infographic: strapiInfographics(uid: {eq: $uid}) {
       id
+      uid
       Author
       dateCreated
       CardDescription

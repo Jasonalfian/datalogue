@@ -29,7 +29,7 @@ exports.createPages = async ({ graphql, actions }) => {
     {
       infographics: allStrapiInfographics {
         nodes {
-          id
+          uid
           Title
         }
       }
@@ -40,6 +40,7 @@ exports.createPages = async ({ graphql, actions }) => {
     {
       categories: allStrapiCategories {
         nodes {
+          uid
           Name
         }
       }
@@ -56,20 +57,20 @@ exports.createPages = async ({ graphql, actions }) => {
 
   result.data.infographics.nodes.forEach(infographics => {
     createPage({
-      path: `/Infographics/${infographics.Title}`,
+      path: `/Infographics/${infographics.uid}`,
       component: path.resolve(`src/pageTemplate/InfographicTemplate.js`),
       context: {
-        title: infographics.Title,
+        uid: infographics.uid,
       },
     })
   })
 
   result2.data.categories.nodes.forEach(categories => {
     createPage({
-      path: `/Datasets/${categories.Name}`,
+      path: `/Datasets/${categories.uid}`,
       component: path.resolve(`src/pageTemplate/DatasetTemplate.js`),
       context: {
-        name: categories.Name,
+        name: categories.uid,
       },
     })
   })

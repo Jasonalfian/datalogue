@@ -103,6 +103,7 @@ query ($skip: Int!, $limit: Int!) {
   ){
     nodes {
       id
+      uid
       Title
       coverCard {
         childImageSharp {
