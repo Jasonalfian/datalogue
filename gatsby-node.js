@@ -69,7 +69,7 @@ exports.createPages = async ({ graphql, actions }) => {
       path: `/Datasets/${categories.Name}`,
       component: path.resolve(`src/pageTemplate/DatasetTemplate.js`),
       context: {
-        name: categories.Name,
+        Name: categories.Name,
       },
     })
   })
