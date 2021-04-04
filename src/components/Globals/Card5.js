@@ -23,7 +23,7 @@ const MediumImage = ({
       </SRLWrapper>  
     </div>
     )
-  } else if ((image3 !== "") && (image2 === "")){
+  } else if ((image3 === "") && (image2 !== "")){
     return(
     <div className="col-12">
 

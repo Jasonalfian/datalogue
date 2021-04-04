@@ -17,9 +17,12 @@ const MediumPage = ({data}) => {
   var infographic3 = ""
 
   if (data.infographic.infographic2 === null){
+   
     infographic2 =  ""
   } else {
+   
     infographic2 =  data.infographic.infographic2.childImageSharp.fluid
+    console.log(infographic2)
   }
 
   if (data.infographic.infographic3 === null){
